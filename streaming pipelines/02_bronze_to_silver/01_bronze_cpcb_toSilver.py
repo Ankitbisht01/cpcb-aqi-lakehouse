@@ -9,7 +9,7 @@ SOURCE_TABLE = "aqi_data.bronze.bronze_cpcb_telemetry"
 
 # Register this function as a DLT target table in the pipeline
 @dlt.table(
-    name="silver_cpcb_telemetry",
+    name="aqi_data.silver.silver_cpcb_telemetry",
     comment="Unnested and flattened CPCB station metrics with enforced data types to silver layer",
     table_properties={"quality": "silver"}
 )

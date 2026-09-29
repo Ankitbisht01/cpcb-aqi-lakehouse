@@ -11,7 +11,7 @@ SOURCE_PATH = "abfss://aqi-data@lshc.dfs.core.windows.net/cpcb_raw/*/*/*/*.json"
 # The @dlt.table decorator tells Databricks to manage this function as a pipeline dataset
 # 'name' defines the exact table name that will be registered in your target catalog and schema
 @dlt.table(
-    name="bronze_cpcb_telemetry",
+    name="aqi_data.bronze.bronze_cpcb_telemetry",
     
     # 'comment' adds documentation that will be visible inside the Unity Catalog Data Explorer
     comment="Raw ingested CPCB telemetry data, appended continuously from ADLS",

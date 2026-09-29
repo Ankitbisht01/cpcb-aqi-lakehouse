@@ -8,7 +8,7 @@ SOURCE_TABLE = "aqi_data.silver.silver_cpcb_telemetry"
 # 1. REAL-TIME ALERTING TABLE (Streaming Table)
 # ==============================================================================
 @dlt.table(
-    name="critical_stations_alert",
+    name="aqi_data.gold.critical_stations_alert",
     comment="Real-time stream of stations reporting hazardous pollutant levels above 80",
     table_properties={"quality": "gold"}
 )
@@ -36,7 +36,7 @@ def critical_stations_alert():
 # 2. DAILY CITY SUMMARY (Materialized View)
 # ==============================================================================
 @dlt.table(
-    name="daily_city_summary",
+    name="aqi_data.gold.daily_city_summary",
     comment="Daily aggregated minimum, maximum, and average pollutant metrics per city (rounded to 2 decimals)",
     table_properties={"quality": "gold"}
 )
@@ -57,7 +57,7 @@ def daily_city_summary():
 # 3. CURRENT STATE RANKING (Materialized View)
 # ==============================================================================
 @dlt.table(
-    name="state_ranking_current",
+    name="aqi_data.gold.state_ranking_current",
     comment="Current ranking of states by average pollutant levels (rounded to 2 decimals)",
     table_properties={"quality": "gold"}
 )
