@@ -75,3 +75,11 @@ cpcb-aqi-lakehouse/
 │       ├── 01_silver_cpcb_toGold.py     # Gold dimension generation[cite: 9]
 │       └── 02_silver_to_gold_combind_data.py # unionByName unified fact table[cite: 9]
 └── Readme.md                            # Project documentation[cite: 3]
+
+## Contact
+Built as a data engineering portfolio project demonstrating real-time streaming, lakehouse architecture, and production-grade data quality patterns.
+
+For questions or collaboration opportunities, connect via:
+
+LinkedIn: linkedin.com/in/ankitbisht007
+GitHub: Check out more projects in my repositories
